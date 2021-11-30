@@ -2,42 +2,28 @@
     <div class="footer container-xxl mx-auto position-relative p-0">
         <div class="list-footer">
             <div class="row gap-md-0 gap-3">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-6 col-md-12">
                     <div class="list-space">
-                        <img src="/assets/frontend-ui/didadidu.png" height="40px" alt="" />
+                        <img src="/assets/frontend-ui/didadidu.png" height="60px" alt="" />
                     </div>
-                    <nav class="list-unstyled">
-                        <li class="list-space">
-                            <a href="/" class="list-menu">Home</a>
-                        </li>
-                        <li class="list-space">
-                            <a href="/#sharedHosting" class="list-menu">Pricing</a>
-                        </li>
-                        </li>
-                    </nav>
+                    <p class="text-white col-12">
+                        Asvalue's Point Of Sales adalah aplikasi kasir berbasis cloud storage yang memudahkan proses operasional usaha Anda. Asvalue memudahkan anda dalam merekap data-data transaksi. 
+                    </p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h2 class="footer-text-title text-white">Product</h2>
                     <nav class="list-unstyled">
                         <li class="list-space">
-                            <a href="/#sharedHosting" class="list-menu">Shared Hosting</a>
+                            <a href="/" class="list-menu">Home</a>
                         </li>
                         <li class="list-space">
-                            <a href="/#vpsHosting" class="list-menu">VPS Hosting</a>
+                            <a href="/#featured" class="list-menu">Fitur</a>
                         </li>
                         <li class="list-space">
-                            <a href="/#mailServer" class="list-menu">Main Server</a>
+                            <a href="/#price" class="list-menu">Harga</a>
                         </li>
                         <li class="list-space">
-                            <a href="/#servis" class="list-menu">Software House</a>
-                        </li>
-                    </nav>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h2 class="footer-text-title text-white">Company</h2>
-                    <nav class="list-unstyled">
-                        <li class="list-space">
-                            <a href="/#servis" class="list-menu">About</a>
+                            <a href="#" class="list-menu">Hubungi Kami</a>
                         </li>
                     </nav>
                 </div>
@@ -45,7 +31,7 @@
                     <h2 class="footer-text-title text-white">Other</h2>
                     <nav class="list-unstyled">
                         <li class="list-space">
-                            <a href="/#asValue" class="list-menu">Asvalue Point Of Sales</a>
+                            <a href="/#asValue" class="list-menu">Asvalue's Point Of Sales</a>
                         </li>
                     </nav>
                 </div>
@@ -58,17 +44,17 @@
             </div>
             <div class="mx-auto d-flex flex-column flex-lg-row align-items-center footer-info-space gap-4">
                 <div class="d-flex align-items-center gap-4">
-                    <a href="" class="btn btn-circle btn-green">
-                        <i class="fab fa-whatsapp"></i>
+                    <a href="#" class="btn btn-circle btn-green">
+                        <i class="fab fa-whatsapp fa-2x"></i>
                     </a>
-                    <a href="" class="btn btn-circle btn-blue">
-                        <i class="fab fa-facebook-f"></i>
+                    <a href="#" class="btn btn-circle btn-blue">
+                        <i class="fab fa-facebook-f fa-2x"></i>
                     </a>
-                    <a href="" class="btn btn-circle btn-red">
-                        <i class="fab fa-instagram"></i>
+                    <a href="#" class="btn btn-circle btn-red">
+                        <i class="fab fa-instagram fa-2x"></i>
                     </a>
-                    <a href="" class="btn btn-circle btn-yellow">
-                        <i class="fab fa-youtube"></i>
+                    <a href="#" class="btn btn-circle btn-yellow">
+                        <i class="fab fa-youtube fa-2x"></i>
                     </a>
                 </div>
                 <nav class="mx-auto d-flex flex-wrap align-items-center justify-content-center gap-4">

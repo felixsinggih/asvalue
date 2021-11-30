@@ -8,7 +8,7 @@
             <div class="position-relative d-none d-lg-block h-100 width-left">
                 <img class="position-absolute img-fluid centered"
                     src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-11.png"
-                    alt="" />
+                    alt="" style="height: 400px" />
             </div>
             <div class="d-flex mx-auto align-items-left justify-content-left width-right mx-lg-0">
                 <div class="right mx-lg-0 mx-auto">
@@ -17,7 +17,7 @@
                             src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-11.png"
                             alt="" />
                     </div>
-                    <h3 class="title-text">Masuk</h3>
+                    <h3 class="title-text mt-lg-5">Verifikasi</h3>
 
                     @if (session()->has('success'))
                         <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -35,41 +35,23 @@
                         </div>
                     @endif
 
-                    <form style="margin-top: 1.5rem" action="/login" method="post">
+                    <form style="margin-top: 1.5rem" action="/passwordverification" method="post">
                         @csrf
                         <div class="form-group">
-                            <label>Email address</label>
-                            <input type="email" class="form-control @error('email') is-invalid @enderror" name="email"
-                                id="email" value="{{ old('email') }}" placeholder="name@example.com" required>
-                            @error('email')
+                            <label>Kode Verifikasi</label>
+                            <input type="text" class="form-control @error('token') is-invalid @enderror" name="token"
+                                id="token" value="{{ old('token') }}" placeholder="Kode verifikasi" required>
+                            @error('token')
                                 <div class="invalid-feedback">
                                     {{ $message }}
                                 </div>
                             @enderror
-                        </div>
-                        <div class="form-group">
-                            <label>Password</label>
-                            <input type="password" class="form-control @error('password') is-invalid @enderror"
-                                name="password" id="password" placeholder="Password" required>
-                            @error('password')
-                                <div class="invalid-feedback">
-                                    {{ $message }}
-                                </div>
-                            @enderror
-                        </div>
-                        <div class="d-flex justify-content-end" style="margin-top: 0.75rem">
-                            <a href="/forgotpassword" class="forgot-password fst-italic">Forgot Password?</a>
+                            <i class="text-small" style="font-style: italic">Silahkan masukan kode verifikasi yang dikirimkan ke email.</i>
                         </div>
                         <button class="btn btn-big btn-blue d-block w-100 mt-3" type="submit">
-                            Masuk
+                            Kirim
                         </button>
                     </form>
-                    <p class="text-center bottom-caption">
-                        Belum punya akun?
-                        <span class="yellow-bottom-caption">
-                            <a href="/register">Daftar Disini</a>
-                        </span>
-                    </p>
                 </div>
             </div>
         </div>

@@ -10,6 +10,9 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
+                    <a class="nav-link px-md-4" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link px-md-4" aria-current="page" href="/#featured">Fitur</a>
                 </li>
                 <li class="nav-item">
@@ -22,8 +25,7 @@
 
             <div class="d-flex">
                 @auth('user')
-
-                    <a class="btn btn-outline-blue" href="#" style="margin-right: 10px">
+                    <a class="btn btn-outline-blue" href="/profile" style="margin-right: 10px">
                         {{ explode(' ', Auth::guard('user')->user()->name)[0] }}
                     </a>
                     <form action="/logout" method="post">

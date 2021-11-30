@@ -1,8 +1,11 @@
 <?php
 
 use App\Http\Controllers\Admin;
+use App\Http\Controllers\EmailController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PasswordResetController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,16 +23,26 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index']);
 // Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/dashboard', function () {
-    echo 'Dashboard';
-})->middleware('auth:user');
-
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
 
 Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
+
+Route::get('/sendemail', [EmailController::class, 'sendEmailVerification'])->middleware('auth:user');
+Route::get('/emailconfirmation/{token}', [EmailController::class, 'emailConfirmation']);
+
+Route::get('/forgotpassword', [PasswordResetController::class, 'index']);
+Route::post('/forgotpassword', [PasswordResetController::class, 'forgot']);
+
+Route::get('/passwordverification', [PasswordResetController::class, 'verification']);
+Route::post('/passwordverification', [PasswordResetController::class, 'verify']);
+
+Route::get('/resetpassword/{token}', [PasswordResetController::class, 'reset']);
+Route::post('/resetpassword', [PasswordResetController::class, 'reseting']);
+
+Route::get('/profile', [ProfileController::class, 'index'])->middleware('auth:user');
 
 // admin
 Route::get('/asv-login', [Admin\LoginController::class, 'index'])->middleware('guest');

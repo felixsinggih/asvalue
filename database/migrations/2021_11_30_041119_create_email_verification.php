@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePasswordResetsTable extends Migration
+class CreateEmailVerification extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreatePasswordResetsTable extends Migration
      */
     public function up()
     {
-        Schema::create('asv_password_resets', function (Blueprint $table) {
+        Schema::create('asv_email_verification', function (Blueprint $table) {
             $table->id();
-            $table->string('user_id')->index();
+            $table->string('user_id');
             $table->string('token');
             $table->timestamps();
         });
@@ -28,6 +28,6 @@ class CreatePasswordResetsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('asv_password_resets');
+        Schema::dropIfExists('asv_email_verification');
     }
 }
