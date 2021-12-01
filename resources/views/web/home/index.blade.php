@@ -15,12 +15,12 @@
                     </h1>
                     <div
                         class="d-flex flex-sm-row flex-column align-items-center mx-lg-0 mx-auto justify-content-center gap-3">
-                        <button class="btn btn-big btn-blue">
+                        <a href="/#asvalue" class="btn btn-big btn-blue">
                             Coba Gratis
-                        </button>
-                        <button class="btn btn-big btn-outline-blue">
+                        </a>
+                        {{-- <button class="btn btn-big btn-outline-blue">
                             Lihat Video Demo
-                        </button>
+                        </button> --}}
                     </div>
                 </div>
                 <!-- Right Column -->
@@ -32,72 +32,8 @@
     </section>
     <!-- end header -->
 
-    <!-- benefit potrait -->
-    <section class="h1-00 w-100 bg-white" style="box-sizing: border-box" id="featured">
-        <div class="benefit-potrait container-xxl mx-auto  position-relative" style="font-family: 'Poppins', sans-serif">
-            <div class="d-flex flex-lg-row flex-column align-items-center">
-                <!-- Left Column -->
-                <div class="img-hero text-center justify-content-center d-flex">
-                    <img id="hero" class="img-fluid" src="/assets/frontend-ui/asvalue.png" alt="" />
-                </div>
-
-                <!-- Right Column -->
-                <div
-                    class="right-column d-flex flex-column align-items-lg-start align-items-center text-lg-start text-center">
-                    <h2 class="title-text">3 Keys Benefit</h2>
-                    <ul style="padding: 0; margin: 0">
-                        <li class="list-unstyled" style="margin-bottom: 2rem">
-                            <h4
-                                class="title-caption d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
-                                <span
-                                    class="circle circle-blue text-white d-flex align-items-center justify-content-center">
-                                    1
-                                </span>
-                                Trusted Mentor
-                            </h4>
-                            <p class="text-caption">
-                                We have provided highly experienced mentors<br class="d-sm-inline d-none" />
-                                for several years.
-                            </p>
-                        </li>
-                        <li class="list-unstyled" style="margin-bottom: 2rem">
-                            <h4
-                                class="title-caption d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
-                                <span
-                                    class="circle circle-blue text-white d-flex align-items-center justify-content-center">
-                                    2
-                                </span>
-                                Access Forever
-                            </h4>
-                            <p class="text-caption">
-                                Are you busy at work so it's hard to consult? don't<br class="d-sm-inline d-none" />
-                                worry because you can access anytime.
-                            </p>
-                        </li>
-                        <li class="list-unstyled" style="margin-bottom: 4rem">
-                            <h4
-                                class="title-caption d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
-                                <span
-                                    class="circle circle-blue text-white d-flex align-items-center justify-content-center">
-                                    3
-                                </span>
-                                Halfpenny
-                            </h4>
-                            <p class="text-caption">
-                                We provide economical packages for those of you<br class="d-sm-inline d-none" />
-                                who are still in school or workers.
-                            </p>
-                        </li>
-                    </ul>
-                    <button class="btn btn-big btn-blue">Learn More</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end benefit potrait -->
-
     <!-- benefit landscape -->
-    <section class="h-100 w-100 bg-light-blue" style="box-sizing: border-box">
+    <section class="h-100 w-100 bg-white" style="box-sizing: border-box" id="featured">
         <div class="benefit-landscape container-xxl mx-auto position-relative" style="font-family: 'Poppins', sans-serif">
             <div class="text-center title-text">
                 <h1 class="text-title">3 Keys Benefit</h1>
@@ -108,33 +44,43 @@
 
             <div class="grid-padding text-center">
                 <div class="row">
-                    <div class="col-lg-4 column">
+                    <div class="col-lg-3 column">
                         <div class="icon">
                             {{-- <img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-2.png"
                                 alt="" /> --}}
-                            <i class="fas fa-sign-language fa-8x cl-blue"></i>
+                            <i class="fas fa-sign-language fa-5x cl-blue"></i>
                         </div>
-                        <h3 class="icon-title">Easy to Operate</h3>
+                        <h3 class="icon-title">Laporan Penjualan</h3>
                         <p class="icon-caption">
                             This can easily help you to<br />
                             grow up your business fast
                         </p>
                     </div>
-                    <div class="col-lg-4 column">
+                    <div class="col-lg-3 column">
                         <div class="icon">
-                            <i class="fas fa-chart-line fa-8x cl-blue"></i>
+                            <i class="fas fa-chart-line fa-5x cl-blue"></i>
                         </div>
-                        <h3 class="icon-title">Real-Time Analytic</h3>
+                        <h3 class="icon-title">Laporan Stok Barang</h3>
                         <p class="icon-caption">
                             With real-time analytics, you<br />
                             can check data in real time
                         </p>
                     </div>
-                    <div class="col-lg-4 column">
+                    <div class="col-lg-3 column">
                         <div class="icon">
-                            <i class="fas fa-shield-alt fa-8x cl-blue"></i>
+                            <i class="fas fa-shield-alt fa-5x cl-blue"></i>
                         </div>
-                        <h3 class="icon-title">Very Full Secublue</h3>
+                        <h3 class="icon-title">Manajemen Cabang</h3>
+                        <p class="icon-caption">
+                            With real-time analytics, we<br />
+                            will guarantee your data
+                        </p>
+                    </div>
+                    <div class="col-lg-3 column">
+                        <div class="icon">
+                            <i class="fas fa-shield-alt fa-5x cl-blue"></i>
+                        </div>
+                        <h3 class="icon-title">Manajemen Cabang</h3>
                         <p class="icon-caption">
                             With real-time analytics, we<br />
                             will guarantee your data
@@ -143,7 +89,7 @@
                 </div>
             </div>
 
-            <div class="card-block">
+            <div class="card-block" id="asvalue">
                 <div class="card-blue">
                     <div class="d-flex flex-lg-row flex-column align-items-center">
                         <div class="me-lg-3">
@@ -151,17 +97,21 @@
                         </div>
                         <div class="flex-grow-1 text-lg-start text-center card-text">
                             <h3 class="card-title">
-                                Fast Business Management in 30 minutes
+                                Asvalue's Point Of Sales
                             </h3>
                             <p class="card-caption">
-                                Our tools for business analysis helps an organization
-                                understand<br class="d-none d-lg-block" />
-                                market or business development.
+                                Asvalue's Point Of Sales adalah aplikasi kasir berbasis 
+                                cloud storage<br class="d-none d-lg-block" />yang memudahkan proses operasional usaha Anda. Asvalue memudahkan anda dalam merekap data-data transaksi. 
                             </p>
                         </div>
                         <div class="card-btn-space">
-                            <button class="btn btn-card-blue">Buy Now</button>
-                            <button class="btn btn-outline-blue">Demo Version</button>
+                            @auth('user')
+                            <a href="#" class="btn btn-card-blue">Pesan Sekarang</a>
+                            <a href="/try" class="btn btn-outline-blue">Ajukan Demo</a>
+                            @else 
+                            <a href="/login" class="btn btn-card-blue">Pesan Sekarang</a>
+                            <a href="/login" class="btn btn-outline-blue">Ajukan Demo</a>
+                            @endauth
                         </div>
                     </div>
                 </div>
@@ -171,7 +121,7 @@
     <!-- end benefit landscape -->
 
     <!-- pricing -->
-    <section class="h-100 w-100 bg-white" style="box-sizing: border-box;" id="price">
+    <section class="h-100 w-100 bg-light-blue" style="box-sizing: border-box;" id="price">
         <div class="pricing overflow-hidden container-xxl mx-auto position-relative"
             style="font-family: 'Poppins', sans-serif">
             <div class="container mx-auto">
@@ -208,7 +158,7 @@
                                 </p>
                             </div>
                             <button class="btn btn-big btn-fill-green align-items-center w-100">
-                                Choose Plan
+                                Coba Gratis
                             </button>
                         </div>
                     </div>
@@ -245,7 +195,7 @@
                                 </p>
                             </div>
                             <button class="btn btn-big btn-green align-items-center w-100">
-                                Choose Plan
+                                Pesan Sekarang
                             </button>
                         </div>
                     </div>

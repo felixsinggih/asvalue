@@ -7,6 +7,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PasswordResetController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\TryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,15 +33,18 @@ Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/sendemail', [EmailController::class, 'sendEmailVerification'])->middleware('auth:user');
 Route::get('/emailconfirmation/{token}', [EmailController::class, 'emailConfirmation']);
-
 Route::get('/forgotpassword', [PasswordResetController::class, 'index']);
 Route::post('/forgotpassword', [PasswordResetController::class, 'forgot']);
-
 Route::get('/passwordverification', [PasswordResetController::class, 'verification']);
 Route::post('/passwordverification', [PasswordResetController::class, 'verify']);
 
 Route::get('/resetpassword/{token}', [PasswordResetController::class, 'reset']);
 Route::post('/resetpassword', [PasswordResetController::class, 'reseting']);
+
+Route::get('/try', [TryController::class, 'index'])->middleware('auth:user');
+Route::get('/trynow', [TryController::class, 'trynow'])->middleware('auth:user');
+Route::get('/demosuccess', [TryController::class, 'demoSuccess'])->middleware('auth:user');
+Route::get('/demoreject', [TryController::class, 'demoReject'])->middleware('auth:user');
 
 Route::get('/profile', [ProfileController::class, 'index'])->middleware('auth:user');
 

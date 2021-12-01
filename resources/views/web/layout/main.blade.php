@@ -11,7 +11,7 @@
     <meta name="keywords"
         content="Hosting, Web Hosting, Shared Hosting, Hosting Murah, Hosting Murah Indonesia, VPS, VPS Hosting, VPS Murah, VPS Murah Indonesia, Mail Server, Mail Server Murah, Software House Banyumas, Software House Cilacap, KPLI Banyumas, Komunitas Programmer Linux Indonesia">
 
-    <title>Asvalue's Point Of Sales | {{ $title }}</title>
+    <title>{{ config('app.name') }} | {{ $title }}</title>
     <link href="/assets/frontend-ui/d_logo.png" rel="shortcut icon">
 
     <!-- bootstrap -->
