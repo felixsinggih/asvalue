@@ -54,3 +54,4 @@ Route::post('/asv-login', [Admin\LoginController::class, 'authenticate']);
 Route::post('/asv-login/logout', [Admin\LoginController::class, 'logout']);
 
 Route::get('/asv-admin', [Admin\DashboardController::class, 'index'])->middleware('auth:admin');
+Route::get('/asv-admin/submission', [Admin\SubmissionController::class, 'index'])->middleware('auth:admin');

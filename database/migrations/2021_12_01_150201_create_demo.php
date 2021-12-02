@@ -16,6 +16,7 @@ class CreateDemo extends Migration
         Schema::create('asv_demos', function (Blueprint $table) {
             $table->id();
             $table->string('user_id');
+            $table->text('download_link')->nullable();
             $table->timestamp('created_at')->nullable();
         });
     }

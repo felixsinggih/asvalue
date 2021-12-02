@@ -2,27 +2,15 @@
     <div class="position-sticky pt-3">
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                    <span class="fas fa-camera"></span>
+                <a class="nav-link {{ Request::is('asv-admin') ? 'active' : '' }}" aria-current="page" href="/asv-admin">
+                    <span class="fas fa-tachometer-alt"></span>
                     Dashboard
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span class="fas fa-camera"></span>
+                <a class="nav-link {{ Request::is('asv-admin/submission') ? 'active' : '' }}" href="/asv-admin/submission">
+                    <span class="fas fa-clipboard-list"></span>
                     Orders
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span class="fas fa-camera"></span>
-                    Products
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span class="fas fa-camera"></span>
-                    Customers
                 </a>
             </li>
         </ul>

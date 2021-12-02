@@ -40,7 +40,7 @@
 <body class="text-center">
 
     <main class="form-signin">
-        <form action="asv-login" method="post">
+        <form action="/asv-login" method="post">
             @csrf
             <h1 class="h3 mb-3 fw-normal">Silahkan Log In</h1>
 
